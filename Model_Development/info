@@ -1,1 +1,27 @@
+Malnutrition Risk Prediction using Neural Networks
+This notebook demonstrates the process of building and training a simple feedforward neural network for binary classification, 
+aiming to predict whether a child is at risk of malnutrition based on a given dataset.
 
+Key Steps:
+Data Preparation:
+
+Loaded a dataset with 55,436 samples and 16 features.
+The target variable is malnutrition_risk (yes/no).
+The dataset was split into training and test sets (80/20).
+Features were standardized using StandardScaler.
+
+
+Model Design:
+
+A sequential neural network with:
+Input layer (16 features).
+Two hidden layers with ReLU activation.
+Output layer using sigmoid activation for binary classification.
+Model compiled with Adam optimizer, binary crossentropy loss, and accuracy as the metric.
+Training and Evaluation:
+
+Trained over 20 epochs with batch size 32 and validation split of 20%.
+Evaluated the model’s accuracy and performance on the test set.
+Provided classification metrics (accuracy, precision, recall, F1-score).
+Visualized training and validation accuracy and loss.
+This model offers a foundation for predicting malnutrition risk and can be further optimized or expanded with additional tuning or feature engineering.
